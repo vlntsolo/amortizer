@@ -1,6 +1,8 @@
 <div align="center">
 
 [![ReadTheDocs](https://readthedocs.org/projects/amortizer/badge/?version=latest)](https://amortizer.readthedocs.io/en/latest/?badge=latest)
+[![PyPI](https://img.shields.io/pypi/v/amortizer)](https://pypi.org/project/amortizer/)
+[![license](https://img.shields.io/github/license/vlntsolo/amortizer?label=license)][license]
 
 </div>
 
