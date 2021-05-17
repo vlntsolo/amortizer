@@ -1,24 +1,31 @@
-if __name__ == "__main__":
-    from typing import Type
-    import pandas as pd
+import pandas as pd
 
 class Amortizer:
     """
-    This Class instantiates an new object for a loan ammortization calculations. Attributes are used as initial values for two \n
+    *Amortizer* Class instantiates an new object for a loan ammortization calculations. Attributes are used as initial values for the two 
     implemented methods of payment schedule: **annuity** and classic **straight** amortization.
 
-    Attributes:
-        amount (float): Loan body (i.e. 100000 or 900.50)
-        period (int): Number of months (i.e. 5 years = 60)
-        interest_rate (float): Interest rate in percents (i.e. if 9% then 9 without '%' sign. Decimal types: 9.5 are allowed.)
+    **Attributes**:
 
-    Methods:
-        straight_amortization(): Calculates amortization table with straight amortization and returns a dataframe. \n
-        annuity_amortization(): Calculates amortization table with annuity payments and returns a dataframe. \n
-        get_summary(method="straight"): Calculates amortization dataframe and returns a dictionary with summary statistics. \n
-        to_html(method="straight"): Calculates amortization dataframe and exports results to a string with html markup.  \n
-        to_json(method="straight"): Calculates amortization dataframe and exports results to a string with JSON object. \n
-        to_csvpath: str, method="annuity"): Calculates amortization dataframe and exports results to .csv file. \n
+        *amount (float)*: Loan body (i.e. 100000 or 900.50)
+
+        *period (int)*: Number of months (i.e. 5 years = 60)
+
+        *interest_rate (float)*: Interest rate in percents (i.e. if 9% then 9 without '%' sign. Decimal types: 9.5 are allowed.)
+
+    **Methods**:
+
+        straight_amortization(): Calculates amortization table with straight amortization and returns a dataframe.
+
+        annuity_amortization(): Calculates amortization table with annuity payments and returns a dataframe.
+
+        get_summary(method="annuity"): Calculates amortization dataframe (methods: 'straight' or 'annuity') and returns a dictionary with summary statistics.
+
+        to_html(method="annuity"): Calculates amortization dataframe (methods: 'straight' or 'annuity') and exports results to a string with html markup.
+
+        to_json(method="annuity"): Calculates amortization dataframe (methods: 'straight' or 'annuity') and exports results to a string with JSON object.
+
+        to_csv(path: str, method="annuity"): Calculates amortization dataframe (methods: 'straight' or 'annuity') and exports results to the .csv file.
 
     """
 
@@ -84,6 +91,7 @@ class Amortizer:
 
 
     def annuity_amortization(self):
+
         """Calculates amortization table with annuity payments\n
         A loan amortized in the annuity method comprises a series of payments made between equal time intervals. \n
         This amortization type is used to pay an equal amount each payment period. In the beginning of the loan period, \n
@@ -128,7 +136,7 @@ class Amortizer:
 
         return df
 
-    def get_summary(self, method="straight"):
+    def get_summary(self, method="annuity"):
         """Calculates amortization dataframe and returns a dictionary with summary statistics.
 
         Args:
@@ -168,7 +176,7 @@ class Amortizer:
             return summary
 
 
-    def to_html(self, method="straight"):
+    def to_html(self, method="annuity"):
         """Calculates amortization dataframe and exports results to html markup.
 
         Args:
@@ -186,7 +194,7 @@ class Amortizer:
             df = self.annuity_amortization()
             return df.to_html()
 
-    def to_json(self, method="straight"):
+    def to_json(self, method="annuity"):
         """Calculates amortization dataframe and exports results to JSON.
 
         Args:
