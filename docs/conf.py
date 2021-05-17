@@ -34,7 +34,7 @@ release = '0.0.1'
 # ones.
 extensions = [
     'sphinx.ext.autodoc',
-    'pydata-sphinx-theme',
+    'pydata_sphinx_theme',
     ]
 
 
