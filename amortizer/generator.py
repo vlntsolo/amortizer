@@ -1,6 +1,6 @@
-from typing import Type
-import pandas as pd
-
+if __name__ == "__main__":
+    from typing import Type
+    import pandas as pd
 
 class Amortizer:
     """
@@ -54,7 +54,7 @@ class Amortizer:
         interest_rate_period = self.interest_rate / 1200
 
         df = pd.DataFrame(columns = [
-        'Year:Period', 
+        'Month:Period', 
         'Amortization',
         'Interest expense',
         'Payment',
@@ -100,7 +100,7 @@ class Amortizer:
         annuity_payment = self.amount * interest_rate_period / (1 - 1 / (1 + interest_rate_period)**self.period ) #Monthly payment
 
         df = pd.DataFrame(columns = [
-        'Year:Period', 
+        'Month:Period', 
         'Amortization',
         'Interest expense',
         'Payment',
