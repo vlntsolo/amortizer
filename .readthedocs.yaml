@@ -13,9 +13,9 @@ sphinx:
 submodules:
   include: all
 
-# Optionally build your docs in additional formats such as PDF
-formats:
-   - html
+# # Optionally build your docs in additional formats such as PDF
+# formats:
+#    - pdf
 
 # Optionally set the version of Python and requirements required to build your docs
 python:
