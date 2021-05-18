@@ -6,9 +6,14 @@
 Welcome to Amortizer's documentation!
 =====================================
 
+.. automodule:: amortizer
+   :members:
+
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
+
+   modules
 
 
 
