@@ -1,5 +1,5 @@
 .. Amortizer documentation master file, created by
-   sphinx-quickstart on Mon May 17 16:07:46 2021.
+   sphinx-quickstart on Tue May 18 12:15:18 2021.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
@@ -10,7 +10,6 @@ Welcome to Amortizer's documentation!
    :maxdepth: 2
    :caption: Contents:
 
-   modules
 
 
 Indices and tables
