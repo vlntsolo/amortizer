@@ -1,5 +1,6 @@
 <div align="center">
 
+[![Downloads](https://pepy.tech/badge/amortizer)](https://pepy.tech/project/amortizer)
 [![ReadTheDocs](https://readthedocs.org/projects/amortizer/badge/?version=latest)](https://amortizer.readthedocs.io/en/latest/?badge=latest)
 [![PyPI](https://img.shields.io/pypi/v/amortizer)](https://pypi.org/project/amortizer/)
 ![license](https://img.shields.io/github/license/vlntsolo/amortizer?label=license)
@@ -76,7 +77,7 @@ Feel free to send merge requests.
 # If you've got questions
 
 1. [Read the docs][docs].
-2. [Look through the issues](https://github.com/vlnsolo/amortizer/issues).
+2. [Look through the issues](https://github.com/vlntsolo/amortizer/issues).
 
 
 # License
@@ -84,4 +85,4 @@ Feel free to send merge requests.
 [MIT License](LICENSE).
 
 
-[docs]: https://amortizer.readthedocs.io/en/latest/amortizer.html
+[docs]: https://amortizer.readthedocs.io/en/latest/

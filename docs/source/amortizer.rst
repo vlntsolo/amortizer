@@ -1,4 +1,4 @@
-amortizer package
+Amortizer package
 =================
 
 Submodules
